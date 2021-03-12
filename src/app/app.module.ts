@@ -12,7 +12,7 @@ import { Child2Component } from './child2/child2.component';
 import { Child3Component } from './child3/child3.component';
 import { SharedService} from './services/shared.service';
 import { LoggingService } from './services/logging.service';
-import {UserService} from "./services/user.service";
+import {UserService} from './services/user.service';
 
 @NgModule({
   declarations: [

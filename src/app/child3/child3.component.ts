@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../services/shared.service';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'child3',
   templateUrl: './child3.component.html',
   styleUrls: ['./child3.component.css'],
@@ -10,9 +11,9 @@ import { SharedService } from '../services/shared.service';
 export class Child3Component implements OnInit {
 
   sharedValue;
- 
-   constructor(private sharedService:SharedService){
-     this.sharedValue=sharedService.getSharedValue();
+
+   constructor(private sharedService: SharedService){
+     this.sharedValue = sharedService.getSharedValue();
      console.log('Child-3 ' + this.sharedValue.toString());
    }
 

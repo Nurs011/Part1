@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {UserService} from "./services/user.service";
-import {User} from "./user";
+import {UserService} from './services/user.service';
+import {User} from './user';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'AngularServices';
 
   userList: User[] = [];
-    
+
   constructor(private userService: UserService) {
     // this.userService = new UserService();
   }
