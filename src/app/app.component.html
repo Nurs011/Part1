@@ -1,0 +1,17 @@
+<div class="container">
+  <strong>Angular results </strong>
+  <parent1></parent1>
+  <parent2></parent2>
+  <br>
+  <button type="button" class="btn btn-primary" (click)="getUsers()">
+    Start
+  </button>
+
+  <div *ngFor="let user of userList">
+    <p>
+      Name: {{user.name}}, Status: {{user.status}}
+    </p>
+  </div>
+
+
+</div>
